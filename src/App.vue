@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Coffee msg="ConnXus Coffee Cam"/>
+    <Info/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Coffee from './components/Coffee.vue'
+import Info from './components/Info.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Coffee,
+    Info
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Lobster');
+
+html, body { height: 100%; }
+body {
+  background: #bf9c6b;
+  overflow-x: hidden;
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lobster', cursive;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: white;
   margin-top: 60px;
 }
 </style>
